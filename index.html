@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>나의 취미 소개 </title>
+    <style>
+        body {
+            background-color: rgb(139, 131, 137);
+            margin: 0;
+            padding: 20px;
+        }
+        hl,h2 {
+            color: rgb(110, 218, 128);
+        }
+        .box {
+            background-color: rgb(178, 175, 178);
+            padding: 15px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        button{
+            background-color: yellowgreen;
+            color:rgb(3, 172, 48);
+            border: none;
+            padding: 10px;
+            font-size: 14px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: tomato;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+   <body>
+    <h1>나의 취미 소개</h1>
+    <div class="box">
+        <h2>안녕하세요😎</h2>
+        <p>저는 김현식입니다. 이 페이지에서 제가 좋아하는 취미들을 간단히 소개해 볼게요.</p>
+    <button onclick="ToggleHobby()">소개보기/닫기</button>
+    </div>
+    <div class="hidden" id="hobby">
+        <div class="box">
+        <h2>나의 취미 목록</h2>
+        <ul>
+            <li>눕기</li>
+            <li>커피마시기</li>
+        </ul>
+        </div>
+        <div class="box">
+        <h2>취미 자세히 소개</h2>
+        <h3>😑눕기</h3>
+        <p>편해요.</p>
+        <h3>☕커피마시기</h3>
+        <p>아무리 추워도 아아를 마십니다.</p>
+        </div>
+        <div class="box">
+        <h2>나의 작은 목표</h2>
+        <ul>
+            <li>빅데이터 분석기사 따기</li>
+            <li>자녀계획성공하기</li>
+        </ul>
+        </div>
+        <div class="box">
+        <h2>마무리 한 마디</h2>
+        <p><strong>不怕慢, 只怕站</strong></p>
+        </div>
+        </div>
+          <script>
+            function ToggleHobby() {
+               const hobby = document.getElementById("hobby");
+               hobby.classList.toggle("hidden");
+            }
+        </script>
+</body>
+</html>
